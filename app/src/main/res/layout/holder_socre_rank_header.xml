@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:gravity="center"
+              android:background="@drawable/ic_score_rank_bg"
+              android:layout_height="@dimen/d175">
+    <com.shuzhengit.zhixin.view.SignInView
+        android:layout_width="@dimen/d85"
+        app:ringWidth="@dimen/d5"
+        app:ringColor="#f1efd9"
+        app:text="1"
+        app:fontSize="@dimen/d30"
+        app:innerColor="#fbfaf5"
+        app:textColor="#f65956"
+        android:layout_height="@dimen/d85"/>
+    <TextView
+        android:layout_marginTop="@dimen/d15"
+        style="@style/text16spTextColorBlack"
+        android:text="张三"
+        />
+    <TextView
+        android:layout_marginTop="@dimen/d7"
+        style="@style/text14spTextColorBlack"
+        android:text="积分数量:2000"
+        />
+</LinearLayout>

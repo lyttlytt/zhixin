@@ -1,0 +1,89 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+//apply from: 'dependencies.gradle'
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        //classpath 'com.android.tools.build:gradle:2.3.0'
+        classpath 'com.android.tools.build:gradle:2.2.3'
+        classpath 'me.tatarka:gradle-retrolambda:3.2.5'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+
+        // NOTE: Do not place your application config here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+ext {
+
+    compileSdkVersion = 25
+    //编译版本
+    buildToolsVersion = '26.0.0'
+    applicationId = "com.shuzhengit.zhixin"
+    //最低版本
+    minSdkVersion = 16
+    //目标版本
+    targetSdkVersion = 25
+    //100 000 000
+    versionCode = 100000005
+
+    versionName = "1.0.5"
+    //使用java8
+    javaVersion = JavaVersion.VERSION_1_8
+    //兼容包版本
+    supportVersion = '25.3.1'
+
+    //图片加载
+    glideVersion = '3.7.0'
+    //广告图
+    convenientbannerVersion = '2.0.5'
+    gsonVersion = '2.7'
+    fastJosn = '1.1.63.android'
+    //rxjava
+    rxjava2Version = '2.0.1'
+    rxandroid2Version = '2.0.1'
+    //网络请求
+    okhttpVersion = '3.2.0'
+    loggingInterceptorVersion = '3.4.1'
+    retrofitVersion = '2.3.0'
+    retrofit2CconverterGsonVersion = '2.0.0'
+    retrofit2Rxjava2AdapterVersion = '1.0.0'
+
+    //控件注解
+    butterknifeVersion = '8.2.1'
+    butterknifeCompilerVersion = '8.2.1'
+    //dagger2
+    daggerVersion = '2.0.2'
+    //annotation
+    annotation = '10.0-b28'
+//    "appcompat-v7"        : 'com.android.support:appcompat-v7:25.2.0',
+//    "support-v4"          : 'com.android.support:support-v4:25.2.0',
+//    "support-design"      : 'com.android.support:design:25.2.0',
+//    "support-recyclerview": 'com.android.support:recyclerview-v7:25.2.0',
+//    "constraint-layout"   : 'com.android.support.constraint:constraint-layout:1.0.1',
+//
+//    "okhttp-logging"      : 'com.squareup.okhttp3:logging-interceptor:3.4.1',
+//    "okhttp"              : 'com.squareup.okhttp3:okhttp:3.2.0',
+//    "retrofit2"           : 'com.squareup.retrofit2:retrofit:2.3.0',
+//    "retrofit2Converter"  : 'com.squareup.retrofit2:converter-gson:2.0.0',
+//    "rxjava"              : 'io.reactivex.rxjava2:rxjava:2.0.1',
+//    "rxandroid"           : 'io.reactivex.rxjava2:rxandroid:2.0.1',
+//    "rxjava2Adapter"      : 'com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0',
+//    "gson"                : 'com.google.code.gson:gson:2.7',
+//    "convenientbanner"    : 'com.bigkoo:convenientbanner:2.0.5',
+//    "glide"               : 'com.github.bumptech.glide:glide:3.7.0',
+//    "butterknife"         : 'com.jakewharton:butterknife:8.2.1',
+//    "butterknife-compiler": 'com.jakewharton:butterknife-compiler:8.2.1'
+}

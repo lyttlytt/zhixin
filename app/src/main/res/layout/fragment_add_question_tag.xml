@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="vertical"
+    android:padding="@dimen/d15">
+
+    <!--<TextView-->
+    <!--android:id="@+id/tvQuestionCategory"-->
+    <!--style="@style/text14spTextColorBlack"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:gravity="left"-->
+    <!--/>-->
+
+    <!--<com.shuzhengit.zhixin.view.FlowRadioGroup-->
+    <!--android:id="@+id/flCategory"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--&gt;-->
+    <!--</com.shuzhengit.zhixin.view.FlowRadioGroup>-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/d14"
+        android:layout_weight="1"
+        android:id="@+id/etAddTag"
+        android:hint="给问题添加标签吧"/>
+        <Button
+            android:layout_width="@dimen/d50"
+            android:layout_height="@dimen/d25"
+            android:textSize="@dimen/d14"
+            android:id="@+id/btnAddTag"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/shape_btn_login"
+            android:text="添加"/>
+    </LinearLayout>
+
+</LinearLayout>

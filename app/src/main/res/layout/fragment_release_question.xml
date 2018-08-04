@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/etQuestionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:hint="请输入问题"
+        android:padding="@dimen/d15"
+        android:textColor="@color/blueGrey700"
+        android:textSize="16sp"/>
+
+    <View
+        style="@style/dividerHorizontal"/>
+
+    <EditText
+        android:id="@+id/etQuestionDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:hint="详细信息"
+        android:padding="@dimen/d15"
+        android:textColor="@color/grey700"
+        android:textSize="14sp"/>
+
+    <LinearLayout
+        android:id="@+id/llUpLoadImg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d120"
+        android:orientation="horizontal"
+        android:padding="@dimen/d15">
+
+        <ImageView
+            android:id="@+id/ivAddImg"
+            android:layout_width="@dimen/d88"
+            android:layout_height="@dimen/d88"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="@dimen/d5"
+            android:background="@drawable/ic_add_img"/>
+    </LinearLayout>
+</LinearLayout>

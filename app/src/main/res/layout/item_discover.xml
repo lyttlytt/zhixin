@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/d44"
+    android:background="@drawable/selector_item"
+    android:clickable="true"
+    android:paddingEnd="@dimen/d15"
+    android:paddingLeft="@dimen/d15"
+    android:paddingRight="@dimen/d15"
+    android:paddingStart="@dimen/d15">
+
+    <ImageView
+        android:id="@+id/ivLeftIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_question"/>
+
+    <TextView
+        android:id="@+id/tvItemName"
+        style="@style/text14spTextColorBlueGrey700"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/d15"
+        android:layout_marginStart="@dimen/d15"
+        android:layout_toEndOf="@id/ivLeftIcon"
+        android:layout_toRightOf="@id/ivLeftIcon"
+        android:text="问答"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_arrow_right"/>
+</RelativeLayout>

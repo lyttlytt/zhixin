@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">知新</string>
+    <string name="userFeedback">用户反馈</string>
+    <string name="systemsetting">系统设置</string>
+
+    <!--<string name="zhiXin">知新</string>-->
+    <!--<string name="discovery">发现</string>-->
+    <!--<string name="schoolCircle">校圈</string>-->
+    <!--<string name="mine">我的</string>-->
+    <string-array name="homeTabNames">
+        <item name="zhiXin">首页</item>
+        <!--<item name="discovery">发现</item>-->
+        <item name="question">问吧</item>
+        <!--<item name="schoolCircle">校圈</item>-->
+        <item name="mine">我的</item>
+    </string-array>
+
+    <string name="networkNotAvailable">网络不可用</string>
+
+    <string name="pullToRefreshNormal">下拉刷新</string>
+    <string name="pullToRefreshRelease">释放立即刷新</string>
+    <string name="pullToRefreshing">正在刷新</string>
+    <string name="pullToRefreshCompleted">刷新完成</string>
+    <string name="pullToRefreshLoading">玩命加载中</string>
+    <string name="pullToRefreshLoadNoMore">没有更多数据了</string>
+    <string name="pullToRefreshLoadFail">加载失败,点击重试</string>
+    <!--<string name="pullToRefreshLoadFailResetBtn">重试</string>-->
+    <string name="pullToRefreshLoadCompleted">加载成功</string>
+    <string name="register">立即注册</string>
+    <string name="forgetPassword">忘记密码</string>
+    <string name="login">登录</string>
+    <string name="complete">完成</string>
+    <string name="answer">%d回答</string>
+    <string name="clearCache">清除缓存</string>
+    <string name="nickname">昵称</string>
+    <string name="email">邮箱</string>
+    <string name="sex">性别</string>
+    <string name="man">男</string>
+    <string name="woman">女</string>
+    <string name="brithday">出生日期</string>
+    <string name="school">学校</string>
+    <string name="comment">%d回复</string>
+    <string name="password">密码</string>
+    <string name="allComment">全部评论</string>
+
+    <string name="unFinish">功能正在开发中....</string>
+    <string name="clickBackKeyAgainExit">再按一次退出程序</string>
+    <string name="sendValidCode">发送验证码</string>
+    <string name="userFansCount">%d 粉丝</string>
+    <string name="userScore">%d 积分</string>
+    <string name="userFollow">%d 关注</string>
+    <string name="questionAnswerCount">%d 回答</string>
+    <string name="followAnswer">+ 关注问题</string>
+    <string name="checkVersionUpdate">检查更新</string>
+    <string name="resume">简介</string>
+    <string name="profession">职业</string>
+    <string name="wenBaType">#%s#</string>
+    <string name="askCount">%d提问 ·</string>
+
+
+</resources>

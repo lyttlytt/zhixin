@@ -1,0 +1,175 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+apply plugin: 'com.neenbedankt.android-apt'
+android {
+//    lintOptions {
+//        checkReleaseBuilds false
+//        // Or, if you prefer, you can continue to check for errors in release builds,
+//        // but continue the build even when errors are found:
+//        abortOnError false
+//    }
+     signingConfigs {
+//        config {
+//            storeFile file('C:\\Users\\asus\\AndroidStudioProjects\\1111\\ZhiXin_android\\zhixin.jks')
+//            storePassword '123456'
+//            keyAlias 'zhixinkey'
+//            keyPassword '123456'
+//        }
+    }
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion '26.0.0'
+    defaultConfig {
+        applicationId rootProject.ext.applicationId
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true //dex突破65535限制
+    }
+//    buildTypes {
+//        release {
+//            minifyEnabled true
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.config
+//        }
+//        debug {
+//            minifyEnabled true
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.config
+//        }
+//    }
+    compileOptions {
+        sourceCompatibility rootProject.ext.javaVersion
+        targetCompatibility rootProject.ext.javaVersion
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    productFlavors {
+        xiaomi {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "xiaomi"]
+        }
+        _360 {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "_360"]
+        }
+        baidu {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "baidu"]
+        }
+        wandoujia {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "wandoujia"]
+        }
+        huawei {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "huawei"]
+        }
+        anzhi {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "anzhi"]
+        }
+        tencent {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "tencent"]
+        }
+        oppo {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "oppo"]
+        }
+        pp {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "pp"]
+        }
+        sougou {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "sougou"]
+        }
+        googlePlay {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "googlePlay"]
+        }
+//        meizu {
+//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "meizu"]
+//        }
+//        yingyonghui {
+//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "yingyonghui"]
+//        }
+//        yunos {
+//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "yunos"]
+//        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    //    compile rootProject.ext.dependencies["appcompat-v7"]
+
+    //    compile 'com.android.support:appcompat-v7:25.3.1'
+
+    //    compile rootProject.ext.dependencies["constraint-layout"]
+
+    //    compile 'com.android.support.constraint:constraint-layout:1.0.1'
+
+    //butterknife
+    compile "com.jakewharton:butterknife:$rootProject.ext.butterknifeVersion"
+    apt "com.jakewharton:butterknife-compiler:$rootProject.ext.butterknifeCompilerVersion"
+
+    //内存测试
+    compile project(path: ':library')
+    compile "com.android.support:cardview-v7:$rootProject.ext.supportVersion"
+
+    //    dagger2
+
+    //    compile "com.google.dagger:dagger:$rootProject.ext.daggerVersion"
+
+    //    compile "com.google.dagger:dagger-compiler:$rootProject.ext.daggerVersion"
+
+    //        compile "org.glassfish:javax.annotation:$rootProject.ext.annotation"
+
+    //    compile 'jp.wasabeef:richeditor-android:1.2.2'
+
+    //    compile 'com.github.chrisbanes:PhotoView:1.2.6'
+
+    //友盟三方登录和分享   版本v6.4.5
+    compile files('libs/SocialSDK_QQ_Simplify.jar')
+    compile files('libs/SocialSDK_Sina_Simplify.jar')
+    compile files('libs/SocialSDK_WeChat_Simplify.jar')
+    compile files('libs/umeng_shareboard_widget.jar')
+    compile files('libs/umeng_social_shareboard.jar')
+    compile files('libs/umeng_social_shareview.jar')
+    compile files('libs/umeng_social_api.jar')
+    compile files('libs/umeng_social_net.jar')
+
+    //友盟统计分析sdk v6.1.2
+    compile files('libs/umeng-analytics-v6.1.2.jar')
+
+    //    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile files('libs/utdid4all-1.0.4.jar')
+
+    //百度定位
+    compile files('libs/BaiduLBS_Android.jar')
+
+    //加载大图
+
+    //知乎图库
+
+    //图文混排
+
+    //    compile 'com.huangdali:mricheditor:1.0.1'
+
+    //简单的键值对存储,缓存用
+
+    //        compile 'com.orhanobut:hawk:2.0.1'
+
+    //    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.2'
+
+    //    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.2'
+
+    //    compile 'com.android.support.constraint:constraint-layout:1.0.1'
+    compile 'com.github.chrisbanes:PhotoView:1.2.6'
+    compile 'com.zhihu.android:matisse:0.4.3'
+    compile 'com.android.support.constraint:constraint-layout:1.0.1'
+    compile 'com.android.support:design:25.2.0'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    testCompile 'junit:junit:4.12'
+}

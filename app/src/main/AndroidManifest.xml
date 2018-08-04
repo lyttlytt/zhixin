@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shuzhengit.zhixin">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <application
+        android:name=".APP"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:resizeableActivity="false"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".index.document.detail.DocumentDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.ForgetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <!-- 新浪微博分享 -->
+        <!-- <activity -->
+        <!-- android:name=".WBShareActivity" -->
+        <!-- android:configChanges="keyboardHidden|orientation" -->
+        <!-- android:screenOrientation="portrait" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" /> -->
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" -->
+        <!-- android:launchMode="singleTask" -->
+        <!-- android:name="com.sina.weibo.sdk.share.WbShareTransActivity"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" /> -->
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+
+        <activity
+            android:name="com.umeng.socialize.media.WBShareCallBackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 微信分享 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- qq分享 -->
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent101414611" />
+            </intent-filter>
+        </activity>
+        <!-- qq分享 -->
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- <meta-data -->
+        <!-- android:name="UMENG_APPKEY" -->
+        <!-- android:value="597fdd674544cb640e001a3b"> -->
+        <!-- <meta-data -->
+        <!-- android:name="UMENG_CHANNEL" -->
+        <!-- android:value="${UMENG_CHANNEL_VALUE}"/> -->
+        <!-- </meta-data> -->
+        <!-- 友盟key/渠道 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="597fdd674544cb640e001a3b" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+
+        <activity
+            android:name=".mine.FeedBackActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 百度定位 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="pRO8usOeq1D4WRCtC5w1eOEfPb0X9Sa3" />
+
+        <activity android:name=".question.question_detail.QuestionDetailActivity" />
+        <activity android:name=".question.release_question.ReleaseQuestionActivity" />
+        <activity
+            android:name=".question.answer.AddAnswerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".mine.SystemSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.EditUserInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.SelectSchoolActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".index.document.detail.comment.CommentDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".index.document.PhotoViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.user.UserInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.FansWithFollowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".question.release_question.AddQuestionTagActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".question.answer.AnswerDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.history.HistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.collect.CollectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.question.MineQuestionActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".http.download.RxDownLoadService" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.shuzhengit.zhixin.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".column.ColumnActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wenba.detail.WenBaDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wenba.detail.reply.ReplyDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wenba.mine.MineWenBaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wenba.mine.ReplyQuestionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wenba.MoreWenBaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wenba.ApplyAdminActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wenba.EditApplyAdminInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wenba.SelectCategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".index.document.detail.WebViewActivity" />
+        <activity android:name=".sign_in.SignInActivity" />
+        <activity android:name=".sign_in.score.ScoreRankActivity" />
+        <activity android:name=".sign_in.score.ScoreSourceActivity" />
+        <activity android:name=".sign_in.calendar.CalendarActivity" />
+        <activity android:name=".sign_in.money.MoneyActivity" />
+        <activity android:name=".hongbao"></activity>
+    </application>
+
+</manifest>

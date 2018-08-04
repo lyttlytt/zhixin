@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/toolbar"/>
+
+        <RelativeLayout
+            android:id="@+id/rlUserInfo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d80"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:padding="@dimen/d15">
+
+            <com.shuzhengit.zhixin.view.CircleImageView
+                android:id="@+id/civUserAvatar"
+                android:layout_width="@dimen/d66"
+                android:layout_height="@dimen/d66"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_normal_icon"
+                app:civ_border_color="@color/red100"
+                app:civ_border_width="@dimen/d2"/>
+
+            <TextView
+                android:id="@+id/tvUserName"
+                style="@style/text16spTextColorWhite"
+                android:layout_alignTop="@id/civUserAvatar"
+                android:layout_marginLeft="@dimen/d7"
+                android:layout_marginStart="@dimen/d7"
+                android:layout_marginTop="@dimen/d7"
+                android:layout_toEndOf="@id/civUserAvatar"
+                android:layout_toRightOf="@id/civUserAvatar"/>
+
+            <TextView
+                android:id="@+id/tvSchool"
+                style="@style/text12spTextColorWhite"
+                android:layout_below="@id/tvUserName"
+                android:layout_marginLeft="@dimen/d7"
+                android:layout_marginStart="@dimen/d7"
+                android:layout_marginTop="@dimen/d7"
+                android:layout_toEndOf="@id/civUserAvatar"
+                android:layout_toRightOf="@id/civUserAvatar"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_right_white"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d44"
+            android:background="@color/colorWhite">
+
+            <TextView
+                android:id="@+id/tvFansCount"
+                style="@style/text14spTextColorWhite"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_item"
+                android:clickable="true"
+                android:text="@string/userFansCount"
+                android:textColor="@color/blueGrey900"/>
+
+            <View style="@style/dividerVertical"/>
+
+            <TextView
+                android:id="@+id/tvFollowCount"
+                style="@style/text14spTextColorWhite"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_item"
+                android:clickable="true"
+                android:text="@string/userFollow"
+                android:textColor="@color/blueGrey900"/>
+        </LinearLayout>
+
+        <View
+            style="@style/dividerHorizontal"
+            android:layout_marginBottom="@dimen/d15"
+            />
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/d15"-->
+        <!--android:background="@color/appBackgroundColor"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d62">
+
+            <include
+                android:id="@+id/dynamic"
+                layout="@layout/item_mine_tab"/>
+
+            <View style="@style/dividerVertical"/>
+
+            <include
+                android:id="@+id/history"
+                layout="@layout/item_mine_tab"
+                />
+
+            <View style="@style/dividerVertical"/>
+
+            <include
+                android:id="@+id/collect"
+                layout="@layout/item_mine_tab"/>
+        </LinearLayout>
+
+        <View
+            style="@style/dividerHorizontal"
+            android:layout_marginBottom="@dimen/d15"
+            />
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/d15"-->
+        <!--android:background="@color/appBackgroundColor"/>-->
+        <include
+            android:id="@+id/signIn"
+            layout="@layout/item_discover"/>
+
+        <View
+            style="@style/dividerHorizontal"
+            />
+
+        <include
+            android:id="@+id/scoreRank"
+            layout="@layout/item_discover"/>
+
+        <View
+            style="@style/dividerHorizontal"
+            />
+
+        <include
+            android:id="@+id/alumni"
+            layout="@layout/item_discover"/>
+
+        <View
+            style="@style/dividerHorizontal"
+            />
+
+        <include
+            android:id="@+id/mineMajor"
+            layout="@layout/item_discover"/>
+
+        <View style="@style/dividerHorizontal"/>
+
+        <include
+            android:id="@+id/mineQuestion"
+            layout="@layout/item_discover"/>
+
+        <View style="@style/dividerHorizontal"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d15"
+            android:background="@color/grey100"/>
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/d15"-->
+        <!--android:background="@color/appBackgroundColor"/>-->
+
+        <include
+            android:id="@+id/feedback"
+            layout="@layout/item_discover"/>
+
+        <View style="@style/dividerHorizontal"/>
+
+        <include
+            android:id="@+id/systemSetting"
+            layout="@layout/item_discover"/>
+
+        <View style="@style/dividerHorizontal"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d90"
+                android:background="@drawable/selector_item"
+                android:orientation="vertical"
+                android:padding="@dimen/d15">
+
+    <com.shuzhengit.zhixin.view.CircleImageView
+        android:id="@+id/civUserAvatar"
+        android:layout_width="@dimen/d45"
+        android:layout_height="@dimen/d45"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_normal_icon"/>
+
+    <TextView
+        style="@style/text14spTextColorBlack"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/d15"
+        android:layout_toRightOf="@id/civUserAvatar"
+        android:text="用户名"
+        android:id="@+id/tvUserName"
+        />
+
+    <Button
+        android:id="@+id/btnFollow"
+        android:layout_width="@dimen/d70"
+        android:layout_height="@dimen/d30"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/shape_column_bg"
+        android:text="关注"
+        android:textColor="@color/colorWhite"/>
+</RelativeLayout>

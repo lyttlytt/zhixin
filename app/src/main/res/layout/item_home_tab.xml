@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:gravity="center"
+              android:layout_height="match_parent">
+<ImageView
+    android:layout_width="@dimen/d20"
+    android:layout_height="@dimen/d20"
+    android:id="@+id/ivTab"
+    android:scaleType="centerCrop"
+    android:src="@drawable/ic_mine_select"
+    />
+    <TextView
+        android:layout_marginTop="@dimen/d3"
+        style="@style/text10spTextColorBlueGrey700"
+        android:id="@+id/tvTabName"
+        android:textColor="@drawable/selector_home_tab_text_color"
+        />
+</LinearLayout>

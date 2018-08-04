@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d58"
+                android:orientation="vertical">
+
+    <TextView
+        style="@style/text16spTextColorBlack"
+        android:layout_marginLeft="@dimen/d30"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/d30"
+        android:text="分享新闻获得10积分"
+        android:id="@+id/tvSource"
+        />
+    <TextView
+        android:id="@+id/tvAddScore"
+        style="@style/text16spTextColorWhite"
+        android:text="+100"
+        android:textColor="@color/red700"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/d30"
+        android:layout_centerVertical="true"
+        />
+    <View
+        style="@style/dividerHorizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/d15"
+        android:layout_marginRight="@dimen/d15"
+        />
+</RelativeLayout>

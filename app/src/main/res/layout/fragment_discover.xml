@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:divider="@drawable/shape_line"
+    app:showDividers="middle|end">
+
+    <include layout="@layout/toolbar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d15"/>
+
+    <include
+        android:id="@+id/itemQuestion"
+        layout="@layout/item_discover"/>
+
+    <!--<View style="@style/dividerHorizontal"/>-->
+
+    <include
+        android:id="@+id/itemMajor"
+        layout="@layout/item_discover"/>
+
+    <!--<View style="@style/dividerHorizontal"/>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d15"/>
+
+    <include
+        android:id="@+id/itemDataShare"
+        layout="@layout/item_discover"/>
+
+    <!--<View style="@style/dividerHorizontal"/>-->
+
+    <include
+        android:id="@+id/itemIdle"
+        layout="@layout/item_discover"/>
+
+    <!--<View style="@style/dividerHorizontal"/>-->
+
+    <include
+        android:id="@+id/itemCommunity"
+        layout="@layout/item_discover"/>
+
+    <!--<View style="@style/dividerHorizontal"/>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d15"/>
+
+    <include
+        android:id="@+id/itemEat"
+        layout="@layout/item_discover"/>
+
+    <!--<View style="@style/dividerHorizontal"/>-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/d30"-->
+        <!--android:background="@color/colorWhite"-->
+        <!--android:paddingEnd="@dimen/d15"-->
+        <!--android:paddingLeft="@dimen/d15"-->
+        <!--android:paddingRight="@dimen/d15"-->
+        <!--android:paddingStart="@dimen/d15">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/ivLeftIcon"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:src="@drawable/ic_question"/>-->
+
+        <!--<TextView-->
+            <!--style="@style/text14spTextColorWhite"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="@dimen/d15"-->
+            <!--android:layout_marginStart="@dimen/d15"-->
+            <!--android:layout_toEndOf="@id/ivLeftIcon"-->
+            <!--android:layout_toRightOf="@id/ivLeftIcon"-->
+            <!--android:text="问答"-->
+            <!--android:textColor="@color/blueGrey500"-->
+            <!--/>-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:src="@drawable/ic_arrow_right"/>-->
+
+        <!--<View-->
+            <!--style="@style/dividerHorizontal"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--/>-->
+    <!--</RelativeLayout>-->
+
+</android.support.v7.widget.LinearLayoutCompat>

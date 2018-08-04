@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <!--5.0标题栏颜色 -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--5.0状态栏颜色 -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--toolbar的高度-->
+        <item name="android:actionBarSize">@dimen/d44</item>
+        <item name="android:windowAnimationStyle">@style/ActivityAnimation</item>
+        <!--控件选中时候的颜色 默认使用colorAccent-->
+        <!--<item name="android:colorControlActivated">@color/colorAccent</item>-->
+        <item name="android:colorControlActivated">@color/colorAccent</item>
+        <!--recyclerView滚动到顶部 半圆的颜色-->
+        <!--<item name="android:colorEdgeEffect">@color/blue700</item>-->
+        <item name="android:windowBackground">@color/appBackgroundColor</item>
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <!--重写recyclerView自带的分割线-->
+        <item name="android:listDivider">@drawable/recycler_view_normal_divider_bg</item>
+
+    </style>
+</resources>

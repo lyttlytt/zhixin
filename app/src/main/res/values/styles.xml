@@ -1,0 +1,167 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+
+    <style name="myCalendar" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textSize">@dimen/d16</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <!--<item name="android:weekDayTextAppearance">@color/colorBlack</item>-->
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <!--5.0标题栏颜色 -->
+        <item name="colorPrimary">@color/red600</item>
+        <!--5.0状态栏颜色 -->
+        <item name="colorPrimaryDark">@color/red700</item>
+        <item name="colorAccent">@color/red600</item>
+        <!--toolbar的高度-->
+        <item name="android:actionBarSize">@dimen/d44</item>
+        <item name="android:windowAnimationStyle">@style/ActivityAnimation</item>
+        <!--重写recyclerView自带的分割线-->
+        <item name="android:listDivider">@drawable/recycler_view_normal_divider_bg</item>
+        <item name="android:windowBackground">@color/appBackgroundColor</item>
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+    </style>
+    <!--toolbar返回键颜色-->
+    <style name="toolbar" parent="Base.ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorControlNormal">@color/colorWhite</item>
+    </style>
+    <!--TabLayout字体大小-->
+    <style name="TabLayoutTextSize" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/d16</item>
+    </style>
+
+    <!--activity的进入和退出动画-->
+    <style name="ActivityAnimation" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/right_out</item>
+    </style>
+
+    <style name="dividerHorizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@drawable/recycler_view_normal_divider_bg</item>
+    </style>
+    <style name="dividerVertical">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/recycler_view_normal_divider_bg</item>
+    </style>
+    <!-- 白色字体 -->
+    <style name="text12spTextColorWhite" parent="android:Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <!--取消默认的padding-->
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+    <style name="text14spTextColorWhite" parent="text12spTextColorWhite">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="text16spTextColorWhite" parent="text12spTextColorWhite">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="text20spTextColorWhite" parent="text12spTextColorWhite">
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="text34spTextColorWhite" parent="text12spTextColorWhite">
+        <item name="android:textSize">34sp</item>
+    </style>
+    <!-- 白色字体结束 -->
+
+    <!--高亮主题颜色字体-->
+    <style name="text12spTextColorPrimary" parent="text12spTextColorWhite">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+    <style name="text14spTextColorPrimary" parent="text14spTextColorWhite">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+    <style name="text16spTextColorPrimary" parent="text16spTextColorWhite">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+    <style name="text20spTextColorPrimary" parent="text20spTextColorWhite">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+    <!--高亮主题颜色字体结束-->
+
+    <!--不同黑色字体  -->
+    <style name="text20spTextColorBlack" parent="text20spTextColorWhite">
+        <item name="android:textColor">@color/grey1000</item>
+    </style>
+    <style name="text16spTextColorBlack" parent="text16spTextColorWhite">
+        <item name="android:textColor">@color/grey1000</item>
+    </style>
+    <style name="text14spTextColorBlack" parent="text14spTextColorWhite">
+        <item name="android:textColor">@color/grey1000</item>
+    </style>
+    <style name="text12spTextColorBlack" parent="text12spTextColorWhite">
+        <item name="android:textColor">@color/grey1000</item>
+    </style>
+
+    <style name="text20spTextColorBlueGrey700" parent="text20spTextColorWhite">
+        <item name="android:textColor">@color/blueGrey700</item>
+    </style>
+    <style name="text16spTextColorBlueGrey700" parent="text16spTextColorWhite">
+        <item name="android:textColor">@color/blueGrey700</item>
+    </style>
+    <style name="text14spTextColorBlueGrey700" parent="text14spTextColorWhite">
+        <item name="android:textColor">@color/blueGrey700</item>
+    </style>
+    <style name="text12spTextColorBlueGrey700" parent="text12spTextColorWhite">
+        <item name="android:textColor">@color/blueGrey700</item>
+    </style>
+    <style name="text10spTextColorBlueGrey700" parent="text12spTextColorWhite">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/blueGrey700</item>
+    </style>
+
+    <style name="text20spTextColorBlueGrey500" parent="text20spTextColorWhite">
+        <item name="android:textColor">@color/blueGrey500</item>
+    </style>
+    <style name="text16spTextColorBlueGrey500" parent="text16spTextColorWhite">
+        <item name="android:textColor">@color/blueGrey500</item>
+    </style>
+    <style name="text14spTextColorBlueGrey500" parent="text14spTextColorWhite">
+        <item name="android:textColor">@color/blueGrey500</item>
+    </style>
+    <style name="text12spTextColorBlueGrey500" parent="text12spTextColorWhite">
+        <item name="android:textColor">@color/blueGrey500</item>
+    </style>
+
+
+    <style name="text20spTextColorBlueGrey100" parent="text20spTextColorWhite">
+        <item name="android:textColor">@color/blueGrey100</item>
+    </style>
+    <style name="text16spTextColorBlueGrey100" parent="text16spTextColorWhite">
+        <item name="android:textColor">@color/blueGrey100</item>
+    </style>
+    <style name="text14spTextColorBlueGrey100" parent="text14spTextColorWhite">
+        <item name="android:textColor">@color/blueGrey100</item>
+    </style>
+    <style name="text12spTextColorBlueGrey100" parent="text12spTextColorWhite">
+        <item name="android:textColor">@color/blueGrey100</item>
+    </style>
+    <!--<style name="text16spTextColorBlueGrey700" parent="text16spTextColorWhite">-->
+        <!--<item name="android:textColor">@color/blueGrey700</item>-->
+    <!--</style>-->
+    <!--<style name="text14spTextColorBlueGrey500" parent="text14spTextColorWhite">-->
+        <!--<item name="android:textColor">@color/blueGrey500</item>-->
+    <!--</style>-->
+
+    <!--不同颜色字体结束-->
+
+</resources>

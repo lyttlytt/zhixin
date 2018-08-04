@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.shuzhengit.zhixin.sign_in.SignInActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:background="@color/colorWhite">
+
+
+
+        <com.shuzhengit.zhixin.view.SignInView
+            android:layout_width="@dimen/d130"
+            android:layout_height="@dimen/d130"
+            app:innerColor="#ffbf0d"
+            app:fontSize="@dimen/d16"
+            app:ringWidth="@dimen/d10"
+            app:ringColor="#fffad1"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/siMorning"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_above="@id/siMorning"
+            android:layout_marginLeft="@dimen/d7"
+            android:gravity="center"
+            android:layout_alignLeft="@id/siMorning"
+            android:layout_height="wrap_content">
+        <TextView
+            android:drawableLeft="@drawable/ic_morning_sign_light"
+            style="@style/text14spTextColorBlack"
+            android:text="早起 "
+            android:id="@+id/tvMorning"
+            android:drawablePadding="@dimen/d7"
+            />
+
+        <TextView
+            android:layout_marginLeft="@dimen/d7"
+            android:id="@+id/tvMorningTime"
+            style="@style/text20spTextColorWhite"
+            android:textColor="#ffbf0d"
+            android:text="9:00"
+            />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d15"
+        android:background="@color/grey100"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@color/colorWhite">
+
+        <com.shuzhengit.zhixin.view.SignInView
+            android:layout_width="@dimen/d130"
+            android:layout_height="@dimen/d130"
+            app:fontSize="@dimen/d16"
+            app:innerColor="#d0cdd0"
+            android:layout_centerInParent="true"
+            android:id="@+id/siNight"
+            app:ringColor="#f2f2f2"
+            app:ringWidth="@dimen/d10"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_above="@id/siNight"
+            android:gravity="center"
+            android:layout_alignLeft="@id/siNight"
+            android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/text14spTextColorBlack"
+            android:drawableLeft="@drawable/ic_night_sign_grey"
+            android:text="早睡 "
+            android:drawablePadding="@dimen/d7"
+            android:layout_marginLeft="@dimen/d7"
+            android:layout_alignLeft="@id/siNight"
+            android:id="@+id/tvNight"
+            />
+        <TextView
+            android:drawablePadding="@dimen/d7"
+            android:layout_marginLeft="@dimen/d7"
+            android:id="@+id/tvNightTime"
+            style="@style/text20spTextColorWhite"
+            android:textColor="#8c8c8c"
+            android:text="21:00"
+            />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

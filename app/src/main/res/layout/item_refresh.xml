@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/grey100">
+
+        <TextView
+            android:id="@+id/tvRefreshStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/pullToRefreshNormal"
+            android:textColor="@color/grey900"
+            android:textSize="14sp"/>
+
+        <ProgressBar
+            android:id="@+id/pbRefreshing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tvRefreshStatus"
+            android:layout_alignTop="@id/tvRefreshStatus"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tvRefreshStatus"
+            android:layout_toStartOf="@id/tvRefreshStatus"
+            android:indeterminateDrawable="@drawable/animated_progress"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/ivRefreshArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/tvRefreshStatus"
+            android:layout_toStartOf="@id/tvRefreshStatus"
+            android:src="@drawable/ic_refresh_arrow"/>
+    </RelativeLayout>
+</LinearLayout>

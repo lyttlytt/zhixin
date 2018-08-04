@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_item"
+    android:clickable="true"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/d10"
+        android:paddingLeft="@dimen/d15"
+        android:paddingRight="@dimen/d15"
+        android:paddingTop="@dimen/d10"
+        >
+
+
+        <TextView
+            android:id="@+id/tvDocumentTitle"
+            style="@style/text16spTextColorWhite"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:maxLines="2"
+            android:textColor="@color/grey900"/>
+
+        <LinearLayout
+            android:id="@+id/llImages"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d90"
+            android:layout_marginTop="@dimen/d7"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivBanner1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:id="@+id/ivBanner2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/d5"
+                android:layout_marginStart="@dimen/d5"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+
+                />
+
+            <ImageView
+                android:id="@+id/ivBanner3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/d5"
+                android:layout_marginStart="@dimen/d5"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d15"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/d7">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvTopFlag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/d5"
+                    android:background="@drawable/shape_top_flag"
+                    android:paddingBottom="@dimen/d1"
+                    android:paddingLeft="@dimen/d4"
+                    android:paddingRight="@dimen/d4"
+                    android:paddingTop="@dimen/d1"
+                    android:text="置顶"
+                    android:visibility="gone"
+                    android:textColor="@color/red500"
+                    android:textSize="@dimen/d10"
+                    />
+
+                <TextView
+                    android:id="@+id/tvAuthor"
+                    style="@style/text12spTextColorWhite"
+                    android:textColor="@color/grey600"/>
+            </LinearLayout>
+
+            <!--<TextView-->
+            <!--android:id="@+id/tvSchool"-->
+            <!--style="@style/text12spTextColorWhite"-->
+            <!--android:text="清华大学"-->
+            <!--android:textColor="@color/blueGrey600"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tvMajor"-->
+            <!--style="@style/text12spTextColorWhite"-->
+            <!--android:layout_toRightOf="@id/tvSchool"-->
+            <!--android:paddingLeft="@dimen/d15"-->
+            <!--android:text="土木工程"-->
+            <!--android:textColor="@color/blueGrey600"/>-->
+
+            <!--<TextView-->
+            <!--style="@style/text12spTextColorWhite"-->
+            <!--android:id="@+id/tvReadCount"-->
+            <!--android:layout_alignBottom="@id/tvMajor"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignTop="@id/tvMajor"-->
+            <!--android:drawableLeft="@drawable/ic_read"-->
+            <!--android:drawablePadding="@dimen/d3"-->
+            <!--android:text="10086"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@color/blueGrey600"-->
+            <!--android:textSize="@dimen/d12"/>-->
+            <LinearLayout
+                android:id="@+id/llReadCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/d10"
+                    android:layout_height="@dimen/d10"
+                    android:src="@drawable/ic_read"/>
+
+                <TextView
+                    android:id="@+id/tvReadCount"
+                    style="@style/text12spTextColorWhite"
+                    android:layout_marginLeft="@dimen/d3"
+                    android:layout_marginStart="@dimen/d3"
+                    android:textColor="@color/blueGrey600"
+                    />
+            </LinearLayout>
+
+            <!--android:layout_toLeftOf="@id/llReadCount"-->
+            <!--android:layout_toStartOf="@id/llReadCount"-->
+            <TextView
+                android:id="@+id/tvDate"
+                android:visibility="invisible"
+                style="@style/text12spTextColorWhite"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/grey600"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        style="@style/dividerHorizontal"
+        />
+</LinearLayout>
+

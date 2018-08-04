@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_marginBottom="@dimen/d44"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar"/>
+    <com.shuzhengit.zhixin.view.PictureAndTextEditorView
+        android:layout_width="match_parent"
+        android:id="@+id/picAndTextEditor"
+        android:hint="写下你的答案吧"
+        android:padding="@dimen/d15"
+        android:gravity="left|top"
+        android:background="@null"
+        android:layout_height="match_parent"/>
+</LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d44"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/d15"
+        android:paddingRight="@dimen/d15">
+
+        <ImageView
+            android:id="@+id/ivInsertImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_insert_photo"/>
+    </FrameLayout>
+</FrameLayout>

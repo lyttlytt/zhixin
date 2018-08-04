@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/colorWhite"
+              android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/d15"
+        android:layout_marginLeft="@dimen/d15"
+        android:id="@+id/llReleaseUser"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <com.shuzhengit.zhixin.view.CircleImageView
+            android:id="@+id/civUserAvatar"
+            android:layout_width="@dimen/d33"
+            android:layout_height="@dimen/d33"
+            android:src="@drawable/ic_normal_icon"/>
+
+        <TextView
+            style="@style/text14spTextColorBlueGrey700"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/d15"
+            android:layout_toRightOf="@+id/civUserAvatar"
+            android:id="@+id/tvReleaseUserName"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvQuestionTitle"
+        style="@style/text20spTextColorBlueGrey700"
+        android:layout_width="match_parent"
+        android:gravity="left"
+        android:maxLength="40"
+        android:padding="@dimen/d15"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:id="@+id/tvDescription"
+        style="@style/text14spTextColorBlueGrey700"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/d15"
+        android:layout_marginRight="@dimen/d15"
+        android:gravity="left"/>
+
+    <LinearLayout
+        android:id="@+id/llImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d15"
+        android:layout_marginRight="@dimen/d15"
+        android:layout_marginTop="@dimen/d7"
+        >
+
+        <ImageView
+            android:id="@+id/ivBanner1"
+            android:layout_width="@dimen/d88"
+            android:layout_height="@dimen/d88"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            />
+
+        <ImageView
+            android:id="@+id/ivBanner2"
+            android:layout_width="@dimen/d88"
+            android:layout_height="@dimen/d88"
+            android:layout_marginLeft="@dimen/d5"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            />
+
+        <ImageView
+            android:id="@+id/ivBanner3"
+            android:layout_width="@dimen/d88"
+            android:layout_height="@dimen/d88"
+            android:layout_marginLeft="@dimen/d5"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            />
+    </LinearLayout>
+
+    <View
+        style="@style/dividerHorizontal"
+        android:layout_marginTop="@dimen/d15"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d44"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvAnswerCount"
+            style="@style/text14spTextColorBlueGrey500"
+            android:layout_weight="1"
+            android:text="@string/answer"/>
+
+        <View
+            style="@style/dividerVertical"
+            android:layout_marginBottom="@dimen/d15"
+            android:layout_marginTop="@dimen/d15"
+            />
+
+        <TextView
+            android:id="@+id/tvFollowed"
+            style="@style/text14spTextColorPrimary"
+            android:layout_weight="1"
+            android:text="@string/followAnswer"/>
+    </LinearLayout>
+
+    <View
+        style="@style/dividerHorizontal"
+        />
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginTop="@dimen/d30"
+        android:layout_marginLeft="@dimen/d15"
+        style="@style/text16spTextColorWhite"
+        android:text="1"
+        android:layout_centerVertical="true"
+        android:id="@+id/tvRank"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:layout_toRightOf="@id/tvRank"
+        style="@style/text14spTextColorBlack"
+        android:layout_marginLeft="@dimen/d30"
+        android:layout_weight="1"
+        android:layout_centerVertical="true"
+        android:gravity="left"
+        android:text="张三"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        style="@style/text14spTextColorBlack"
+        android:text="积分:4000"
+        android:id="@+id/tvScore"
+        android:drawablePadding="@dimen/d7"
+        android:drawableLeft="@drawable/ic_score_rank_red"
+        android:layout_marginRight="@dimen/d15"
+        android:textColor="@color/colorBlack"/>
+    <View
+        style="@style/dividerHorizontal"
+        android:layout_alignRight="@id/tvScore"
+        android:layout_alignLeft="@id/tvRank"
+        android:layout_alignBottom="@id/tvRank"
+        android:layout_marginTop="@dimen/d15"
+        />
+</RelativeLayout>

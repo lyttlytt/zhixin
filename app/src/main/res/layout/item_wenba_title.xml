@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View style="@style/dividerHorizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d44"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/llMineWenBa"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                style="@style/text14spTextColorBlueGrey700"
+                android:layout_height="match_parent"
+                android:text="我的问吧"
+                />
+
+
+        </LinearLayout>
+
+        <View
+            style="@style/dividerVertical"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/d44"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/llMoreWenBa"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text14spTextColorBlueGrey700"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="更多问吧"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View style="@style/dividerHorizontal"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d15"
+        android:background="@color/grey100"/>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:paddingBottom="@dimen/d5"
+    android:paddingTop="@dimen/d5"
+    android:gravity="center"
+    android:background="@drawable/selector_item"
+    android:clickable="true"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="@dimen/d32"
+        android:layout_height="@dimen/d32"
+        android:id="@+id/ivMineTabImg"/>
+
+    <TextView
+        android:id="@+id/tvMineTabName"
+        style="@style/text12spTextColorBlueGrey700"
+        android:layout_marginTop="@dimen/d5"
+        />
+</LinearLayout>

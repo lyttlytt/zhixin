@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.shuzhengit.zhixin.sign_in.calendar.CalendarActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weekDayTextAppearance="@style/myCalendar"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d15"
+        android:background="@color/grey100"/>
+    <TextView
+        style="@style/text16spTextColorBlack"
+        android:layout_width="match_parent"
+        android:padding="@dimen/d15"
+        android:gravity="left"
+        android:text="早起打卡时间:8:20"
+        />
+    <View
+        style="@style/dividerHorizontal"
+        android:layout_marginRight="@dimen/d15"
+        android:layout_marginLeft="@dimen/d15"
+        />
+
+    <TextView
+        style="@style/text16spTextColorBlack"
+        android:layout_width="match_parent"
+        android:padding="@dimen/d15"
+        android:gravity="left"
+        android:text="早睡打卡时间:21:20"
+        />
+</LinearLayout>

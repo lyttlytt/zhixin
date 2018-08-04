@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:theme="@style/toolbar"
+    android:id="@+id/toolBar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/d44"
+    android:minHeight="@dimen/d44"
+    android:maxHeight="@dimen/d44"
+    android:background="@color/red600">
+
+    <TextView
+        style="@style/text16spTextColorWhite"
+        android:layout_gravity="center"
+        android:id="@+id/tvTitle"
+        android:maxLines="1"
+        />
+    <TextView
+        style="@style/text12spTextColorWhite"
+        android:text="完成"
+        android:visibility="gone"
+        android:id="@+id/tvRight"
+        android:padding="@dimen/d7"
+        android:textColor="@color/colorWhite"
+        android:layout_marginRight="@dimen/d15"
+        android:layout_gravity="right"
+        />
+    <ImageView
+        android:layout_gravity="right"
+        android:id="@+id/ivRightShare"
+        android:visibility="gone"
+        android:layout_marginRight="@dimen/d15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_share"/>
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d85"
+        android:background="@drawable/selector_item"
+        android:clickable="true"
+        android:id="@+id/rlRecommendDocument"
+        android:orientation="horizontal"
+        android:padding="@dimen/d15">
+
+
+        <ImageView
+            android:id="@+id/ivBanner"
+            android:layout_width="@dimen/d88"
+            android:layout_height="@dimen/d65"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="@dimen/d15"
+            android:layout_marginRight="@dimen/d15"
+            android:background="@color/blue600"/>
+
+        <TextView
+            android:id="@+id/tvDocumentTitle"
+            style="@style/text14spTextColorWhite"
+            android:layout_toEndOf="@id/ivBanner"
+            android:layout_toRightOf="@id/ivBanner"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/blueGrey900"/>
+
+        <TextView
+            android:id="@+id/tvSchool"
+            style="@style/text12spTextColorWhite"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/d15"
+            android:layout_marginRight="@dimen/d15"
+            android:layout_toEndOf="@id/ivBanner"
+            android:layout_toRightOf="@id/ivBanner"
+            android:textColor="@color/blueGrey600"/>
+
+        <TextView
+            android:id="@+id/tvMajor"
+            style="@style/text12spTextColorWhite"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/tvSchool"
+            android:layout_toRightOf="@id/tvSchool"
+            android:textColor="@color/blueGrey600"/>
+
+        <LinearLayout
+            android:id="@+id/llReadCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/d10"
+                android:layout_height="@dimen/d10"
+                android:src="@drawable/ic_read"/>
+
+            <TextView
+                android:id="@+id/tvReadCount"
+                style="@style/text12spTextColorWhite"
+                android:layout_marginLeft="@dimen/d3"
+                android:layout_marginStart="@dimen/d3"
+                android:textColor="@color/blueGrey600"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDate"
+            style="@style/text12spTextColorWhite"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/d15"
+            android:layout_marginRight="@dimen/d15"
+            android:layout_toLeftOf="@id/llReadCount"
+            android:layout_toStartOf="@id/llReadCount"
+            android:textColor="@color/blueGrey600"/>
+    </RelativeLayout>
+    <!--<include layout="@layout/item_all_comment_tab"/>-->
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleImageView">
+        <attr name="strokeWidth" format="dimension"/>
+        <attr name="strokeColor" format="color"/>
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="HtmlTextView">
+        <attr name="loadingImg" format="reference"/>
+        <attr name="errorImg" format="reference"/>
+        <attr name="defaultWidth" format="reference"/>
+        <attr name="defaultHeight" format="reference"/>
+    </declare-styleable>
+
+
+
+    <declare-styleable name="ColorTrackTabViewIndicator">
+        <attr name="ctTabSelectedTextColor" format="color"/>
+        <attr name="ctTabIndicatorColor" format="color"/>
+        <attr name="ctTabTextColor" format="color"/>
+        <attr name="ctTabTextSize" format="dimension"/>
+        <attr name="ctTabWidth" format="dimension"/>
+        <attr name="ctTabGravity" format="enum">
+            <enum name="Grivity_Fill" value="0"/>
+            <enum name="Grivity_Center" value="1"/>
+        </attr>
+        <attr name="ctMode">
+            <enum name="scrollable" value="0"/>
+            <enum name="fixed" value="1"/>
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="ColorTrackView">
+        <attr name="ctvText" format="string"/>
+        <attr name="ctvText_size" format="dimension"/>
+        <attr name="ctvText_origin_color" format="color"/>
+        <attr name="ctvText_change_color" format="color"/>
+        <attr name="ctvProgress" format="float"/>
+        <attr name="ctvDirection" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="FollowTextView">
+        <attr name="isFollow" format="boolean"/>
+        <attr name="followed" format="string"/>
+        <attr name="unFollowed" format="string"/>
+        <attr name="followBackground" format="reference"/>
+        <attr name="unFollowBackground" format="reference"/>
+        <attr name="followedTextColor" format="color"/>
+        <attr name="unFollowedTextColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="SignInView">
+        <attr name="ringWidth" format="dimension"/>
+        <attr name="ringColor" format="color"/>
+        <attr name="innerColor" format="color"/>
+        <attr name="fontSize" format="dimension"/>
+        <attr name="text" format="string"/>
+        <attr name="textColor" format="color"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<WebView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:id="@+id/webView"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:scrollbars="none">-->
+
+<!--</WebView>-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/d15"
+    android:orientation="vertical"
+    >
+    <WebView
+        android:layout_width="match_parent"
+        android:id="@+id/webView"
+        android:scrollbars="none"
+        android:paddingLeft="@dimen/d15"
+        android:paddingRight="@dimen/d15"
+        android:background="@color/colorWhite"
+        android:layout_height="wrap_content"/>
+
+    <com.shuzhengit.zhixin.view.HtmlTextView
+        android:id="@+id/htmlTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5dp"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/d15"
+        android:textSize="@dimen/d18"
+        android:layout_marginRight="@dimen/d15"/>
+
+    <RelativeLayout
+        android:layout_width="@dimen/d80"
+        android:gravity="center"
+        android:id="@+id/llLike"
+        android:layout_marginTop="@dimen/d15"
+        android:layout_marginBottom="@dimen/d15"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/d35">
+        <TextView
+            style="@style/text14spTextColorBlueGrey500"
+            android:text="1"
+            android:id="@+id/tvAgreeCount"
+            android:layout_centerInParent="true"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/d5"
+            android:layout_centerVertical="true"
+            android:id="@+id/ivLikeIcon"
+            android:layout_toLeftOf="@id/tvAgreeCount"
+            android:src="@drawable/ic_document_unlike"/>
+
+        <TextView
+            style="@style/text16spTextColorPrimary"
+            android:layout_centerInParent="true"
+            android:id="@+id/tvAddOne"
+            android:textSize="20sp"
+            android:visibility="gone"
+            android:text="+1"/>
+    </RelativeLayout>
+    <View
+        style="@style/dividerHorizontal"
+        android:layout_height="@dimen/d15"
+        />
+</LinearLayout>

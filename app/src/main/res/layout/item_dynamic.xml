@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_item"
+                android:orientation="vertical">
+
+    <com.shuzhengit.zhixin.view.CircleImageView
+        android:id="@+id/civUserAvatar"
+        android:layout_width="@dimen/d35"
+        android:layout_height="@dimen/d35"
+        android:layout_marginLeft="@dimen/d15"
+        android:layout_marginTop="@dimen/d15"
+        android:src="@drawable/ic_normal_icon"/>
+
+    <TextView
+        android:id="@+id/tvUserName"
+        style="@style/text14spTextColorBlueGrey700"
+        android:layout_alignTop="@id/civUserAvatar"
+        android:layout_marginLeft="@dimen/d15"
+        android:layout_toRightOf="@id/civUserAvatar"
+        android:textColor="@color/grey800"
+        />
+
+    <TextView
+        android:id="@+id/tvReleaseTime"
+        style="@style/text12spTextColorBlueGrey700"
+        android:layout_alignBottom="@id/civUserAvatar"
+        android:layout_alignLeft="@id/tvUserName"
+        android:layout_below="@id/tvUserName"
+        android:textColor="@color/grey500"
+        />
+
+    <TextView
+        android:id="@+id/tvReplyContent"
+        style="@style/text14spTextColorBlack"
+        android:layout_below="@id/civUserAvatar"
+        android:layout_marginLeft="@dimen/d15"
+        android:layout_marginRight="@dimen/d15"
+        android:layout_marginTop="@dimen/d15"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:maxLines="3"
+        />
+
+    <ImageView
+        android:id="@+id/ivArticlePic"
+        android:layout_width="@dimen/d50"
+        android:layout_height="@dimen/d50"
+        android:layout_below="@id/tvReplyContent"
+        android:layout_marginLeft="@dimen/d15"
+        android:layout_marginTop="@dimen/d5"
+        android:src="@drawable/ic_dynamic_placeholder"/>
+
+    <TextView
+        android:id="@+id/tvArticleContent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d50"
+        android:layout_alignBottom="@id/ivArticlePic"
+        android:layout_alignTop="@id/ivArticlePic"
+        android:layout_marginRight="@dimen/d15"
+        android:layout_toRightOf="@id/ivArticlePic"
+        android:background="@color/grey50"
+        android:ellipsize="end"
+        android:gravity="left|center"
+        android:maxLines="2"
+        android:padding="@dimen/d7"
+        android:textSize="14sp"/>
+
+    <View
+        android:id="@+id/line"
+        style="@style/dividerHorizontal"
+        android:layout_below="@id/tvArticleContent"
+        android:layout_marginTop="@dimen/d15"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d44"
+        android:layout_below="@id/line"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/llAgree"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_dynamic_unlike"/>
+
+            <TextView
+                style="@style/text14spTextColorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d15"
+                android:text="赞"
+                android:id="@+id/tvAgreeCount"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/llComment"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_dynamic_comment"/>
+
+            <TextView
+                android:id="@+id/tvCommentCount"
+                style="@style/text14spTextColorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d15"
+                android:text="评论"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/llShare"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_dynamic_share"/>
+
+            <TextView
+                style="@style/text14spTextColorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d15"
+                android:text="分享"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

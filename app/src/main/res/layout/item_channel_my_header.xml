@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:gravity="center_vertical"
+              android:layout_height="@dimen/d35">
+<TextView
+    style="@style/text14spTextColorBlueGrey700"
+    android:text="我的分类"
+    android:layout_weight="1"
+    android:gravity="left"
+    />
+    <!--<TextView-->
+        <!--style="@style/text14spTextColorBlueGrey700"-->
+        <!--android:text="长按拖拽可以排序"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:id="@+id/tvMyHeaderTip"-->
+        <!--/>-->
+    <TextView
+        style="@style/text14spTextColorPrimary"
+        android:text="编辑"
+        android:id="@+id/tvColumnEditMode"
+        android:paddingLeft="@dimen/d10"
+        android:paddingRight="@dimen/d10"
+        android:paddingTop="@dimen/d2"
+        android:paddingBottom="@dimen/d2"
+        android:layout_marginRight="@dimen/d15"
+        android:background="@drawable/shape_stroke_border"
+        />
+
+</LinearLayout>

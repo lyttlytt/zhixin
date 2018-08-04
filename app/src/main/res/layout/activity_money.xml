@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey50"
+    tools:context="com.shuzhengit.zhixin.sign_in.money.MoneyActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d140">
+
+        <com.shuzhengit.zhixin.view.CircleImageView
+            android:id="@+id/civAvatar"
+            android:layout_width="@dimen/d70"
+            android:layout_height="@dimen/d70"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_normal_icon"/>
+
+        <TextView
+            android:id="@+id/tvUserName"
+            style="@style/text14spTextColorBlack"
+            android:layout_below="@id/civAvatar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/d7"
+            android:text="张三"
+            />
+        <!--<TextView-->
+        <!--style="@style/text12spTextColorBlack"-->
+        <!--android:text="11.11"-->
+        <!--android:textColor="@color/red700"-->
+        <!--android:layout_below="@id/tvUserName"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--/>-->
+    </RelativeLayout>
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/d30"-->
+        <!--android:background="@color/grey100"/>-->
+
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:layout_marginTop="@dimen/d30"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d48"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/d5"
+        android:paddingTop="@dimen/d5">
+
+        <TextView
+            style="@style/text14spTextColorBlack"
+            android:gravity="left"
+            android:layout_marginLeft="@dimen/d20"
+            android:text="支付宝账号"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d20"
+            android:layout_marginRight="@dimen/d20"
+            android:background="@null"
+            android:hint="输入你的支付宝账号"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/d14"/>
+    </LinearLayout>
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/d15"-->
+        <!--android:background="@color/grey100"/>-->
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/d15"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d48"
+        android:gravity="center_vertical"
+        android:background="@color/colorWhite"
+        android:paddingBottom="@dimen/d5"
+        android:paddingTop="@dimen/d5">
+
+        <TextView
+            style="@style/text14spTextColorBlack"
+            android:layout_marginLeft="@dimen/d20"
+            android:gravity="left"
+            android:text="真实姓名"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            />
+
+        <EditText
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d20"
+            android:layout_marginRight="@dimen/d20"
+            android:background="@null"
+            android:hint="输入你的真实姓名"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/d14"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d15"
+        android:background="@color/grey100"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d48"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/d5"
+        android:paddingTop="@dimen/d5">
+
+        <TextView
+            style="@style/text14spTextColorBlack"
+            android:layout_marginLeft="@dimen/d20"
+            android:text="联系方式"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            />
+
+        <EditText
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d20"
+            android:layout_marginRight="@dimen/d20"
+            android:background="@null"
+            android:hint="输入你的联系方式"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/d14"/>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_marginTop="@dimen/d30"
+        android:layout_marginLeft="@dimen/d60"
+        android:layout_marginRight="@dimen/d60"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d35"
+        android:text="提交"
+        android:textColor="@color/colorWhite"
+        android:background="@color/red500"/>
+</LinearLayout>

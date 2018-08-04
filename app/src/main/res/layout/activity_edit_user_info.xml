@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:divider="@drawable/shape_line"
+    app:showDividers="middle|end">
+
+    <include layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:id="@+id/rlAvatar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d60"
+        android:paddingLeft="@dimen/d15"
+        android:paddingRight="@dimen/d15">
+
+        <TextView
+            style="@style/text16spTextColorBlueGrey700"
+            android:layout_centerVertical="true"
+            android:text="头像"
+            />
+
+        <com.shuzhengit.zhixin.view.CircleImageView
+            android:id="@+id/civUserAvatar"
+            android:layout_width="@dimen/d44"
+            android:layout_height="@dimen/d44"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_normal_icon"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlNickname"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d44"
+        android:paddingLeft="@dimen/d15"
+        android:paddingRight="@dimen/d15">
+
+        <TextView
+            style="@style/text16spTextColorBlueGrey700"
+            android:layout_centerVertical="true"
+            android:text="@string/nickname"
+            />
+
+        <TextView
+            android:id="@+id/tvNickname"
+            style="@style/text16spTextColorBlueGrey700"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlEmail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d44"
+        android:paddingLeft="@dimen/d15"
+        android:paddingRight="@dimen/d15">
+
+        <TextView
+            style="@style/text16spTextColorBlueGrey700"
+            android:layout_centerVertical="true"
+            android:text="@string/email"
+            />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            style="@style/text16spTextColorBlueGrey700"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlSex"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d44"
+        android:paddingLeft="@dimen/d15"
+        android:paddingRight="@dimen/d15">
+
+        <TextView
+            style="@style/text16spTextColorBlueGrey700"
+            android:layout_centerVertical="true"
+            android:text="@string/sex"
+            />
+
+        <TextView
+            android:id="@+id/tvSex"
+            style="@style/text14spTextColorBlueGrey700"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+        <!--<RadioGroup-->
+        <!--android:id="@+id/radioGroupSex"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_centerVertical="true">-->
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/rbMan"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/man"/>-->
+        <!--<RadioButton-->
+        <!--android:id="@+id/rbWoman"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/woman"/>-->
+        <!--</RadioGroup>-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBirthday"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d44"
+        android:paddingLeft="@dimen/d15"
+        android:paddingRight="@dimen/d15">
+
+        <TextView
+            style="@style/text16spTextColorBlueGrey700"
+            android:layout_centerVertical="true"
+            android:text="@string/brithday"
+            />
+
+        <TextView
+            android:id="@+id/tvBirthday"
+            style="@style/text14spTextColorBlueGrey700"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+        <!--<RadioGroup-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_centerVertical="true">-->
+
+        <!--<RadioButton-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:checked="true"-->
+        <!--android:text="男"/>-->
+        <!--<RadioButton-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="女"/>-->
+        <!--</RadioGroup>-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlSchool"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d44"
+        android:paddingLeft="@dimen/d15"
+        android:paddingRight="@dimen/d15">
+
+        <TextView
+            style="@style/text16spTextColorBlueGrey700"
+            android:layout_centerVertical="true"
+            android:text="@string/school"
+            />
+
+        <TextView
+            android:id="@+id/tvSchool"
+            style="@style/text14spTextColorBlueGrey700"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+        <!--<RadioGroup-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_centerVertical="true">-->
+
+        <!--<RadioButton-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:checked="true"-->
+        <!--android:text="男"/>-->
+        <!--<RadioButton-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="女"/>-->
+        <!--</RadioGroup>-->
+    </RelativeLayout>
+</android.support.v7.widget.LinearLayoutCompat>

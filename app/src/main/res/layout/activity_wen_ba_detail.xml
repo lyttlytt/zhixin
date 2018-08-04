@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.shuzhengit.zhixin.view.pull2refreshview.PullToRefreshRecyclerView
+        android:id="@+id/pull2RecyclerView"
+        android:layout_width="match_parent"
+        android:background="@color/grey100"
+        android:layout_height="match_parent"
+        app:layoutManager="LinearLayoutManager"/>
+
+
+
+    <!--<include layout="@layout/toolbar"/>-->
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/d44"-->
+        <!--android:paddingTop="@dimen/d25">-->
+        <!--<TextView-->
+            <!--style="@style/text16spTextColorWhite"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:id="@+id/tvTitle"-->
+            <!--android:maxLines="1"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--/>-->
+    <!--</RelativeLayout>-->
+    <android.support.v7.widget.Toolbar
+        app:theme="@style/toolbar"
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d44"
+        android:minHeight="@dimen/d44"
+        android:maxHeight="@dimen/d44"
+        android:background="@color/red600">
+
+        <TextView
+            style="@style/text16spTextColorWhite"
+            android:layout_gravity="center"
+            android:id="@+id/tvTitle"
+            android:maxEms="12"
+            android:textSize="@dimen/d16"
+            android:ellipsize="end"
+            android:maxLines="1"
+            />
+        <TextView
+            style="@style/text12spTextColorWhite"
+            android:text="完成"
+            android:visibility="gone"
+            android:id="@+id/tvRight"
+            android:padding="@dimen/d7"
+            android:textColor="@color/colorWhite"
+            android:layout_marginRight="@dimen/d15"
+            android:layout_gravity="right"
+            />
+        <ImageView
+            android:layout_gravity="right"
+            android:id="@+id/ivRightShare"
+            android:visibility="invisible"
+            android:layout_marginRight="@dimen/d15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_share"/>
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d44"
+        android:id="@+id/rlAsk"
+        android:layout_gravity="bottom"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        >
+    <View
+        style="@style/dividerHorizontal"
+        android:layout_alignParentTop="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/d15"
+        android:paddingRight="@dimen/d15">
+
+        <EditText
+            android:id="@+id/etComment"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/d40"
+            android:layout_weight="1"
+            android:background="@drawable/line_et_bg"
+            android:hint="输入你的问题"
+            android:textCursorDrawable="@drawable/shape_et_cursor"
+            android:textSize="14sp"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/ibSendComment"
+            android:clickable="true"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_no_send"/>
+    </LinearLayout>
+</RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.shuzhengit.zhixin.mine.SelectSchoolActivity">
+
+    <include layout="@layout/toolbar"/>
+    <!--<android.support.v7.widget.SearchView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/d44"-->
+        <!--android:iconifiedByDefault="false"-->
+        <!--android:id="@+id/searchView"-->
+        <!--android:queryHint="搜索你的学校"-->
+        <!--/>-->
+    <android.support.v7.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionSearch"
+        android:queryHint="请输入搜索内容" />
+    <com.shuzhengit.zhixin.view.pull2refreshview.PullToRefreshRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerview"
+        app:layoutManager="LinearLayoutManager"/>
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<include layout="@layout/toolbar"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d44"
+        android:text="@string/checkVersionUpdate"
+        android:textColor="@color/grey700"
+        android:paddingLeft="@dimen/d15"
+        android:id="@+id/tvCheckUpdate"
+        android:gravity="center_vertical"/>
+    <View
+        style="@style/dividerHorizontal"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d44"
+        android:background="@drawable/selector_item"
+        android:clickable="true"
+        android:id="@+id/rlClearCache"
+        android:paddingEnd="@dimen/d15"
+        android:paddingLeft="@dimen/d15"
+        android:paddingRight="@dimen/d15"
+        android:paddingStart="@dimen/d15">
+
+
+        <TextView
+            android:id="@+id/tvItemName"
+            style="@style/text14spTextColorBlueGrey700"
+            android:layout_centerVertical="true"
+            android:text="@string/clearCache"
+            />
+
+      <TextView
+          style="@style/text12spTextColorBlueGrey700"
+          android:layout_centerVertical="true"
+          android:id="@+id/tvCacheSize"
+          android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View
+        style="@style/dividerHorizontal"
+        />
+    <Button
+        android:layout_marginTop="@dimen/d15"
+        android:layout_marginBottom="@dimen/d15"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d35"
+        android:text="退出登录"
+        android:id="@+id/unLogin"
+        android:layout_marginRight="@dimen/d15"
+        android:layout_marginLeft="@dimen/d15"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/shape_btn_login"/>
+</LinearLayout>

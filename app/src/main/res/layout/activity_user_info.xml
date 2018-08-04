@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--app:layout_scrollFlags="enterAlwaysCollapsed|scroll|exitUntilCollapsed"-->
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/layoutToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d44"
+                android:background="@color/colorPrimary"
+                android:maxHeight="@dimen/d44"
+                android:minHeight="@dimen/d44"
+                app:layout_scrollFlags="exitUntilCollapsed"
+                app:theme="@style/toolbar"
+                >
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    style="@style/text16spTextColorWhite"
+                    android:layout_gravity="center"
+                    android:maxLines="1"
+                    />
+
+                <TextView
+                    android:id="@+id/tvRight"
+                    style="@style/text12spTextColorWhite"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/d15"
+                    android:text="完成"
+                    android:visibility="gone"
+                    />
+
+                <ImageView
+                    android:id="@+id/ivRightShare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/d15"
+                    android:src="@drawable/ic_share"
+                    android:visibility="gone"/>
+            </android.support.v7.widget.Toolbar>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d44"
+                android:background="@color/colorWhite"
+                app:layout_collapseMode="none">
+
+                <View
+                    android:id="@+id/titleBg"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d60"
+                    android:background="@color/colorPrimary"/>
+
+                <com.shuzhengit.zhixin.view.CircleImageView
+                    android:id="@+id/civUserAvatar"
+                    android:layout_width="@dimen/d70"
+                    android:layout_height="@dimen/d70"
+                    android:layout_below="@id/titleBg"
+                    android:layout_marginLeft="@dimen/d15"
+                    android:layout_marginTop="-25dp"
+                    android:src="@drawable/ic_normal_icon"
+                    app:civ_border_color="@color/colorWhite"
+                    app:civ_border_width="1dp"/>
+
+                <Button
+                    android:id="@+id/btnFollow"
+                    android:layout_width="@dimen/d70"
+                    android:layout_height="@dimen/d30"
+                    android:layout_alignBottom="@id/civUserAvatar"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/d15"
+                    android:background="@drawable/shape_column_bg"
+                    android:text="关注"
+                    android:textColor="@color/colorWhite"
+                    />
+
+                <TextView
+                    android:id="@+id/tvSendMessage"
+                    style="@style/text14spTextColorPrimary"
+                    android:layout_alignBottom="@id/btnFollow"
+                    android:layout_alignTop="@id/btnFollow"
+                    android:layout_marginRight="@dimen/d15"
+                    android:layout_toLeftOf="@id/btnFollow"
+                    android:text="发私信"
+                    />
+
+                <TextView
+                    android:id="@+id/userName"
+                    style="@style/text16spTextColorBlack"
+                    android:layout_alignLeft="@id/civUserAvatar"
+                    android:layout_below="@id/civUserAvatar"
+                    android:layout_marginTop="@dimen/d15"
+                    android:text="用户名"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/llFollows"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/userName"
+                    android:layout_below="@id/userName"
+                    android:layout_marginTop="@dimen/d7"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvFollowCount"
+                        style="@style/text14spTextColorPrimary"
+                        android:text="0"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvFollow"
+                        style="@style/text14spTextColorBlueGrey500"
+                        android:layout_marginLeft="@dimen/d7"
+                        android:text="关注"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvFansCount"
+                        style="@style/text14spTextColorPrimary"
+                        android:layout_marginLeft="@dimen/d15"
+                        android:text="0"/>
+
+                    <TextView
+                        android:id="@+id/tvFans"
+                        style="@style/text14spTextColorBlueGrey500"
+                        android:layout_marginLeft="@dimen/d7"
+                        android:text="粉丝"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/line"
+                    style="@style/dividerHorizontal"
+                    android:layout_below="@id/llFollows"
+                    android:layout_marginTop="@dimen/d7"
+                    />
+            </RelativeLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d44"
+            android:background="@color/colorWhite"
+            app:layout_scrollFlags="exitUntilCollapsed"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/colorPrimary"
+            app:tabTextColor="@color/grey500"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        />
+</android.support.design.widget.CoordinatorLayout>

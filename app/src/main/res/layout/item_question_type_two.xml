@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_item"
+    android:clickable="true"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/d15">
+
+        <ImageView
+            android:id="@+id/ivBanner"
+            android:layout_width="@dimen/d100"
+            android:layout_height="@dimen/d66"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/tvQuestionTitle"
+            style="@style/text16spTextColorBlueGrey700"
+            android:layout_width="match_parent"
+            android:layout_toLeftOf="@id/ivBanner"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:maxLines="2"
+            android:textColor="@color/grey1000"
+            />
+
+        <TextView
+            android:id="@+id/tvAnswerCount"
+            style="@style/text12spTextColorPrimary"
+            android:layout_alignBottom="@id/ivBanner"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/d7"
+            android:text="@string/questionAnswerCount"
+
+            android:textColor="@color/grey600"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/dividerHorizontal"
+        />
+</LinearLayout>

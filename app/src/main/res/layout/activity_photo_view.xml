@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shuzhengit.zhixin.index.document.PhotoViewActivity">
+    <uk.co.senab.photoview.PhotoView
+        android:id="@+id/photoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack"
+        />
+    <include layout="@layout/toolbar"/>
+    <TextView
+        style="@style/text14spTextColorWhite"
+        android:text="保存"
+        android:id="@+id/save"
+        android:padding="@dimen/d5"
+        android:layout_margin="@dimen/d15"
+        android:layout_gravity="bottom|right"
+        android:background="@drawable/shape_save"
+        />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pb"
+        android:layout_gravity="center"/>
+</FrameLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        app:elevation="0dp"
+        android:elevation="0dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d44"
+            android:background="@color/red600">
+
+            <ImageView
+                android:layout_width="@dimen/d61"
+                android:layout_height="@dimen/d23"
+                android:layout_centerInParent="true"
+                android:src="@drawable/title_zx"/>
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:textColor="@color/colorWhite"-->
+                <!--android:textSize="@dimen/d20"-->
+                <!--android:text="知新"/>-->
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal">
+
+            <!--<android.support.design.widget.TabLayout-->
+            <com.shuzhengit.zhixin.view.ColorTrackTabLayout
+                android:id="@+id/columnTabLayout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/d36"
+                app:tabIndicatorHeight="0dp"
+                app:tabPadding="0dp"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@color/red600"/>
+
+            <ImageView
+                android:background="@color/colorWhite"
+                android:id="@+id/ivColumn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:scaleType="centerCrop"
+                android:padding="@dimen/d5"
+                android:src="@drawable/ic_plus"/>
+        </LinearLayout>
+        <View
+              style="@style/dividerHorizontal"
+        />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!--<View style="@style/dividerHorizontal"/>-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/documentContentViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    <!--<com.library.xrecyclerView.XRecyclerView-->
+    <!--android:id="@+id/zhiXinRecyclerView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@color/colorWhite"-->
+    <!--app:layoutManager="LinearLayoutManager"/>-->
+</android.support.design.widget.CoordinatorLayout>

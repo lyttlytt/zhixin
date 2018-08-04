@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/toolbar"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/d15"
+            android:layout_height="wrap_content">
+
+            <com.shuzhengit.zhixin.view.CircleImageView
+                android:id="@+id/civQuestionAvatar"
+                android:layout_width="@dimen/d25"
+                android:layout_height="@dimen/d25"
+                android:src="@drawable/ic_normal_icon"/>
+
+            <TextView
+                android:id="@+id/tvQuestionUserName"
+                style="@style/text12spTextColorBlueGrey700"
+                android:layout_alignBottom="@id/civQuestionAvatar"
+                android:layout_alignTop="@id/civQuestionAvatar"
+                android:layout_marginLeft="@dimen/d7"
+                android:layout_toRightOf="@id/civQuestionAvatar"
+                android:text="有态度的网友"
+                />
+
+            <TextView
+                android:id="@+id/tvQuestionInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tvQuestionUserName"
+                android:layout_below="@id/tvQuestionUserName"
+                android:layout_marginRight="@dimen/d15"
+                android:text="喜欢就强奸啊,表白有什么用?追到就操,操不到就下药。分手了就发裸照。连监狱都蹲不起。还敢说爱她?"
+                android:textColor="@color/grey900"
+                android:textSize="@dimen/d14"/>
+        </RelativeLayout>
+        <View
+            style="@style/dividerHorizontal"
+            />
+        <EditText
+            android:padding="@dimen/d15"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/etReplyInfo"
+            android:hint="写下你的回复吧"
+            android:textColor="@color/grey700"
+            android:textSize="@dimen/d14"
+            android:background="@null"/>
+    </LinearLayout>
+</ScrollView>

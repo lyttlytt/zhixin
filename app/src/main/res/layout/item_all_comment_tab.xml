@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:id="@+id/llAllCommentTab"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <!--<View-->
+        <!--android:id="@+id/viewBg"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/d15"-->
+        <!--android:background="@color/appBackgroundColor"-->
+        <!--/>-->
+    <TextView
+        android:layout_height="@dimen/d44"
+        android:layout_width="match_parent"
+        android:text="@string/allComment"
+        android:id="@+id/tvTabName"
+        android:paddingLeft="@dimen/d15"
+        android:drawableLeft="@drawable/shape_all_comment_divider"
+        android:gravity="left|center_vertical"
+        android:drawablePadding="@dimen/d5"
+        style="@style/text14spTextColorBlueGrey500"
+        android:background="@color/colorWhite"/>
+</LinearLayout>

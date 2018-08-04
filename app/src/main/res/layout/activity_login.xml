@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d44"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/d15"
+        android:layout_marginRight="@dimen/d15"
+        android:background="@drawable/line_et_bg"
+        android:cursorVisible="true"
+        android:inputType="phone"
+        android:drawableLeft="@drawable/select_account"
+        android:drawablePadding="@dimen/d15"
+        android:hint="手机号码"
+        />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d44"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/d15"
+        android:layout_marginRight="@dimen/d15"
+        android:layout_marginTop="@dimen/d25"
+        android:background="@drawable/line_et_bg"
+        android:cursorVisible="true"
+        android:drawableLeft="@drawable/select_password"
+        android:drawablePadding="@dimen/d15"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:textCursorDrawable="@drawable/shape_et_cursor"
+        />
+
+    <!--<CheckBox-->
+        <!--android:id="@+id/checkBoxSavePassword"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:layout_marginRight="@dimen/d15"-->
+        <!--android:layout_marginTop="@dimen/d15"-->
+        <!--android:text="记住密码"/>-->
+    <!--<RadioGroup-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:id="@+id/radioGroupType"-->
+    <!--android:layout_marginTop="@dimen/d15"-->
+    <!--android:orientation="horizontal">-->
+    <!--<RadioButton-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/radioBtnStudent"-->
+    <!--android:text="@string/radioBtnStudent"/>-->
+    <!--<RadioButton-->
+    <!--android:id="@+id/radioBtnTeacher"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/radioBtnTeacher"/>-->
+    <!--<RadioButton-->
+    <!--android:id="@+id/radioBtnAdmin"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/radioBtnAdmin"/>-->
+    <!--</RadioGroup>-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d44"
+        android:layout_marginLeft="@dimen/d15"
+        android:layout_marginRight="@dimen/d15"
+        android:layout_marginTop="@dimen/d20"
+        android:background="@drawable/shape_btn_login"
+        android:onClick="login"
+        android:text="@string/login"
+        android:textColor="@color/colorWhite"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/d15"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/d10"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:onClick="forgetPassword"
+            android:text="@string/forgetPassword"
+            android:textColor="@color/grey700"
+            android:textSize="@dimen/d12"/>
+
+        <View
+            style="@style/dividerVertical"/>
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d10"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:onClick="register"
+            android:text="@string/register"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/d12"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/d15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="wechatLogin"
+            android:clickable="true"
+            android:src="@drawable/ic_wechat"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d30"
+            android:clickable="true"
+            android:onClick="qqLogin"
+            android:src="@drawable/ic_qq"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d30"
+            android:clickable="true"
+            android:onClick="sinaLogin"
+            android:src="@drawable/ic_sina"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.shuzhengit.zhixin.question.answer.AnswerDetailActivity">
+
+    <include layout="@layout/toolbar"/>
+    <com.shuzhengit.zhixin.view.pull2refreshview.PullToRefreshRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/pullToRefreshRecyclerView"
+        app:layoutManager="LinearLayoutManager"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d44"
+        android:layout_gravity="bottom"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        >
+
+        <View
+            style="@style/dividerHorizontal"
+            android:layout_alignParentTop="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/d15"
+            android:paddingRight="@dimen/d15">
+
+            <EditText
+                android:id="@+id/etComment"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/d40"
+                android:layout_weight="1"
+                android:background="@drawable/line_et_bg"
+                android:hint="写下你的评论吧"
+                android:textCursorDrawable="@drawable/shape_et_cursor"
+                android:textSize="14sp"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/ibSendComment"
+                android:clickable="true"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_no_send"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

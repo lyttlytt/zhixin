@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:gravity="center_vertical"
+              android:layout_width="match_parent"
+              android:background="@color/appBackgroundColor"
+              android:layout_height="@dimen/d35">
+    <TextView
+        style="@style/text14spTextColorBlueGrey700"
+        android:text="推荐分类"
+        />
+    <TextView
+        android:gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/d5"
+        android:layout_weight="1"
+        android:text="点击可添加分类"/>
+</LinearLayout>

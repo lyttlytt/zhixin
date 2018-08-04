@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:paddingLeft="@dimen/d50"
+              android:paddingRight="@dimen/d50"
+              android:paddingTop="@dimen/d30"
+              android:paddingBottom="@dimen/d30"
+              android:id="@+id/llRoot"
+              android:background="@color/colorWhite"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/prompt_login"/>
+    <TextView
+        android:layout_marginTop="@dimen/d10"
+        style="@style/text14spTextColorBlueGrey500"
+        android:text="登录后才能使用此功能"
+        />
+    <TextView
+        style="@style/text14spTextColorPrimary"
+        android:text="立即登录"
+        android:padding="@dimen/d5"
+        android:id="@+id/tvGoLogin"
+        android:layout_marginTop="@dimen/d5"
+        android:layout_gravity="right|bottom"
+        />
+</LinearLayout>
